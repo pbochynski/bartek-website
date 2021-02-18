@@ -1,114 +1,187 @@
 <html>
+
 <head>
-<meta charset="UTF-8">
-<style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
+  <meta charset="UTF-8">
+  <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-</style>
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      display: show;
+    }
+
+    div.opis {
+      padding: 15px;
+      text-align: center;
+      color: goldenrod;
+      display: none;
+    }
+  </style>
+  <script>
+    function show() {
+      Array.from(document.getElementsByClassName("opis")).forEach(
+        (element) => {
+          element.style.display = "block"
+        }
+      )
+    }
+    function hide() {
+      Array.from(document.getElementsByClassName("opis")).forEach(
+        (element) => {
+          element.style.display = "none"
+        }
+      )
+    }
+  </script>
 </head>
+
 <body>
-  <h1 style="text-align:center">Zielnik Bartka</h1> 
-<div class="gallery">
-  <a target="_blank" href="mak.jpg">
-    <img src="mak.jpg" alt="Mak" width="600" height="400">
-  </a>
-  <div class="desc">Mak</div>
-</div>
+  <h1 style="text-align:center">Zielnik Bartka</h1>
 
-<div class="gallery">
-  <a target="_blank" href="lopian.jpg">
-    <img src="lopian.jpg" alt="Łopian" width="600" height="400">
-  </a>
-  <div class="desc">Łopian</div>
-</div>
+  <p>
+    <button onclick="show()">Pokaż opis</button>
+    <button onclick="hide()">Ukryj opis</button>
+  </p>
 
-<div class="gallery">
-  <a target="_blank" href="niezapominajki.jpg">
-    <img src="niezapominajki.jpg" alt="Niezapominajki" width="600" height="400">
-  </a>
-  <div class="desc">Niezapominajki</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="mak.jpg">
+      <img src="mak.jpg" alt="Mak" width="600" height="400">
+    </a>
+    <div class="desc">Mak</div>
+    <div class="opis">Mak to roślina oleista, rodzimy dla Eurazji, Afryki i Ameryki Północnej. Zalicza się do niego w
+      zależności od ujęcia od ok. 70 do ok. 100 gatunków</div>
+  </div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="kaczeniec.jpg">
-    <img src="kaczeniec.jpg" alt="Kaczeniec" width="600" height="400">
-  </a>
-  <div class="desc">Kaczeniec</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="lopian.jpg">
+      <img src="lopian.jpg" alt="Łopian" width="600" height="400">
+    </a>
+    <div class="desc">Łopian</div>
+    <div class="opis"> Łopian to rodzaj roślin należący do rodziny astrowatych. Liczy 10 gatunków. Występuje w stanie
+      dzikim w umiarkowanych strefach Europy i Azji. W Polsce występują na stanowiskach naturalnych cztery gatunki.
 
-<div class="gallery">
-  <a target="_blank" href="tuja.jpg">
-    <img src="tuja.jpg" alt="Tuja" width="600" height="400">
-  </a>
-  <div class="desc">Tuja</div>
-</div>
+    </div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="koniczyna.jpg">
-    <img src="koniczyna.jpg" alt="Koniczyna Czerwona" width="600" height="400">
-  </a>
-  <div class="desc">Koniczyna Czerwona</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="niezapominajki.jpg">
+      <img src="niezapominajki.jpg" alt="Niezapominajki" width="600" height="400">
+    </a>
+    <div class="desc">Niezapominajki</div>
+    <div class="opis">Niezapominajki spotykane są na wszystkich kontynentach z wyjątkiem Antarktydy. Najbardziej
+      zróżnicowane są w dwóch oddalonych od siebie obszarach – w basenie Morza Śródziemnego i na Nowej Zelandii. W
+      Europie, w większości w jej części południowej, rośnie 41 gatunków. W Turcji rosną 23 gatunki, a w Nowej Zelandii
+      – 33.</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="koniczyna-2.jpg">
-    <img src="koniczyna-2.jpg" alt="Koniczyna Biała" width="600" height="400">
-  </a>
-  <div class="desc">Koniczyna Biała</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="kaczeniec.jpg">
+      <img src="kaczeniec.jpg" alt="Kaczeniec" width="600" height="400">
+    </a>
+    <div class="desc">Kaczeniec</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="mlecz.jpg">
-    <img src="mlecz.jpg" alt="Mniszek Lekarski" width="600" height="400">
-  </a>
-  <div class="desc">Mniszek Lekarski</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="tuja.jpg">
+      <img src="tuja.jpg" alt="Tuja" width="600" height="400">
+    </a>
+    <div class="desc">Tuja</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="chaber.jpg">
-    <img src="chaber.jpg" alt="Chaber" width="600" height="400">
-  </a>
-  <div class="desc">Chaber</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="koniczyna.jpg">
+      <img src="koniczyna.jpg" alt="Koniczyna Czerwona" width="600" height="400">
+    </a>
+    <div class="desc">Koniczyna Czerwona</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="jeczmien.jpg">
-    <img src="jeczmien.jpg" alt="Jęczmień" width="600" height="400">
-  </a>
-  <div class="desc">Jęczmień</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="koniczyna-2.jpg">
+      <img src="koniczyna-2.jpg" alt="Koniczyna Biała" width="600" height="400">
+    </a>
+    <div class="desc">Koniczyna Biała</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="rumianek.jpg">
-    <img src="rumianek.jpg" alt="Rumianek" width="600" height="400">
-  </a>
-  <div class="desc">Rumianek</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="mlecz.jpg">
+      <img src="mlecz.jpg" alt="Mniszek Lekarski" width="600" height="400">
+    </a>
+    <div class="desc">Mniszek Lekarski</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="pszenica.jpg">
-    <img src="pszenica.jpg" alt="Pszenica" width="600" height="400">
-  </a>
-  <div class="desc">Pszenica</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="chaber.jpg">
+      <img src="chaber.jpg" alt="Chaber" width="600" height="400">
+    </a>
+    <div class="desc">Chaber</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="jeczmien.jpg">
+      <img src="jeczmien.jpg" alt="Jęczmień" width="600" height="400">
+    </a>
+    <div class="desc">Jęczmień</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="rumianek.jpg">
+      <img src="rumianek.jpg" alt="Rumianek" width="600" height="400">
+    </a>
+    <div class="desc">Rumianek</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="pszenica.jpg">
+      <img src="pszenica.jpg" alt="Pszenica" width="600" height="400">
+    </a>
+    <div class="desc">Pszenica</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="tulipan.jpg">
+      <img src="tulipan.jpg" alt="Tulipan" width="600" height="400">
+    </a>
+    <div class="desc">Tulipan</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="oset.jpg">
+      <img src="oset.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">Oset</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="roza.jpg">
+      <img src="roza.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">Róża</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="konwalia.jpg">
+      <img src="konwalia.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc">Konwalia</div>
+  </div>
+
 
 </body>
+
 </html>
